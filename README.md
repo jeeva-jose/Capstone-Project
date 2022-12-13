@@ -4,7 +4,7 @@ As part of this project, I have to predict patients’ s survival based on their
 
 ## Project Set Up and Installation
 
-- AutoML experiement configuration in Jupyter notekbook -> automl.ipynb
+- AutoML experiement configured in Jupyter notekbook -> automl.ipynb
 - setup Hyperdrive settings and configuration -> hyperparameter_tuning.ipynb
 - Created traiing folder and place the train.py file
 - Clean data and passing parameters -> train.py
