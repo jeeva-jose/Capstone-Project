@@ -93,14 +93,48 @@ accuracy : 0.849425287356322
  ![BestMetric](/Best%20Metric.png "Best Result")
  ![BestMetric](/BestModel.png "Best Result")
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+Enable deep learning can produce a better result.
 
 ## Hyperparameter Tuning
 *TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
+For this experiment I am using a Scikit-learn Logistic Regression model, parameter sampler using the parameters C and max_iter and chose discrete values with choice for both parameters.
+
+**Parameter sampler**
+
+I chose discrete values with choice for both parameters, C and max_iter.
+
+C is the Regularization while max_iter is the maximum number of iterations.
+
+RandomParameterSampling is one of the choices available for the sampler and I chose it because it is the faster and supports early termination of low-performance runs. If budget is not an issue, we could use GridParameterSampling to exhaustively search over the search space or BayesianParameterSampling to explore the hyperparameter space.
+
+```
+ps = RandomParameterSampling({
+    '--C': choice(1.0, 0.1, 0.05),
+    '--max_iter': choice(50,100,150)})
+    
+ ```
+    
+**Early stopping policy** 
+
+```
+ # Specify a Policy
+policy = BanditPolicy(slack_factor = 0.1, evaluation_interval=1, delay_evaluation=5)
+```
+
+evaluation_interval: This is optional and represents the frequency for applying the policy. Each time the training script logs the primary metric counts as one interval.
+
+slack_factor: The amount of slack allowed with respect to the best performing training run. This factor specifies the slack as a ratio.
+
 
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
+
+Generated the best model and accuracy
+
+ ![HyperDriveResult](/HyperDriveBestModel.png "HyperDriveResult")
+ ![HyperDriveResult](/HyperDriveFromUI.png "HyperDriveResult")
+
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
