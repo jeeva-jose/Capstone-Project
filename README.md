@@ -41,7 +41,10 @@ The dataset provided in csv file contain 13 features:
 My goal is classify patients based on above 12 features and predict the survival target column DEATH_EVENT. 
 
 ### Access
-The data downloaded from Kaggle website and place the csv file in my public GitHub repository.
+The data downloaded from Kaggle website and place the csv file in my GitHub public repository.
+
+[GitHub](https://raw.githubusercontent.com/jeeva-jose/Capstone-Project/main/heart_failure_clinical_records_dataset.csv)
+
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
