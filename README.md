@@ -102,11 +102,11 @@ For this experiment I am using a Scikit-learn Logistic Regression model, paramet
 
 **Parameter sampler**
 
+In random sampling, hyperparameter values are randomly selected from the defined search space. Random sampling supports discrete and continuous hyperparameters. It supports early termination of low-performance jobs
+
 I chose discrete values with choice for both parameters, C and max_iter.
 
 C is the Regularization while max_iter is the maximum number of iterations.
-
-RandomParameterSampling is one of the choices available for the sampler and I chose it because it is the faster and supports early termination of low-performance runs. If budget is not an issue, we could use GridParameterSampling to exhaustively search over the search space or BayesianParameterSampling to explore the hyperparameter space.
 
 ```
 ps = RandomParameterSampling({
@@ -116,6 +116,8 @@ ps = RandomParameterSampling({
  ```
     
 **Early stopping policy** 
+
+Any run that doesn't fall within the slack factor or slack amount of the evaluation metric with respect to the best performing run will be terminated.
 
 ```
  # Specify a Policy
