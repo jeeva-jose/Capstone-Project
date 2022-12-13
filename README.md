@@ -38,10 +38,10 @@ The dataset provided in csv file contain 13 features:
 | DEATH_EVENT | Whether the patient died during the follow-up period | Boolean (0=No, 1=Yes) |
 
 ### Task
-My goal is classify patients based on above 12 features and predict the survival target column DEATH_EVENT. 
+My goal is classify patients based on above 12 features and predict the survival target column as DEATH_EVENT. 
 
 ### Access
-The data downloaded from Kaggle website and place the csv file in my GitHub public repository.
+The dataset downloaded from Kaggle website and place the csv file in my GitHub public repository.
 
 [GitHub](https://raw.githubusercontent.com/jeeva-jose/Capstone-Project/main/heart_failure_clinical_records_dataset.csv)
 
@@ -96,7 +96,6 @@ accuracy : 0.849425287356322
 Enable deep learning can produce a better result.
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
 
 For this experiment I am using a Scikit-learn Logistic Regression model, parameter sampler using the parameters C and max_iter and chose discrete values with choice for both parameters.
 
@@ -130,7 +129,6 @@ slack_factor: The amount of slack allowed with respect to the best performing tr
 
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
 Generated the best model and accuracy
 
@@ -139,12 +137,18 @@ Generated the best model and accuracy
 
 increase the max_iter can be improve the performance of the model.
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
- 
+
  ![HyperDriveResult](/HyperDriveFromUI.png "HyperDriveResult")
 
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
+Created the experiment in AutoML and predicated the best model, register the model for the deployment. Here we need to pass the entry script and environment details are required during the deployment time. The help of Webservice library to deploy the selected model in to Azure container instance. 
+
+scoring script :   It loads and de-serializes the model from its .pkl file in the init-method and it receives parameters sent to the Azure App Service, passes them into the machine learning model for scoring and then returns the resulting values in the run-method.
+
+inference config : what the Python execution environment will be like: What package dependencies does it have 
+
+
  ![Endpoint](/Endpoint.png "Endpoint")
  ![Deployment](/Deployment%20details.png "Deployment details")
  ![Deployment](/Endpoint%20testing%20result.png "Deployment details")
