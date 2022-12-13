@@ -49,7 +49,33 @@ Registerd Dataset
  ![Dataset](/Dataset.png "Register Dataset")
 
 ## Automated ML
-*TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
+
+```
+
+automl_settings = {
+    "experiment_timeout_minutes": 20,
+    "max_concurrent_iterations": 5,
+    "primary_metric" : 'AUC_weighted'
+}
+
+```
+```
+automl_config = AutoMLConfig(compute_target=compute_target,
+                             task = "classification",
+                             training_data=dataset,
+                             label_column_name="DEATH_EVENT",   
+                             path = project_folder,
+                             enable_early_stopping= True,
+                             featurization= 'auto',
+                             debug_log = "automl_errors.log",
+                             **automl_settings
+                            )
+```
+
+
+
+     
+
 
 ### Results
 *TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
