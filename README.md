@@ -72,13 +72,24 @@ automl_config = AutoMLConfig(compute_target=compute_target,
                             )
 ```
 
-
+- compute_target: A compute target is a designated compute resource or environment where you run your training script or host your service deployment.
+- task : what task needs to be performed , classification
+- training_data : the data on which we need to train the autoML.
+- label_column_name : the column name in the training data which is the output label.
+- iterations : the number of iterations we want to run AutoML.
+- primary_metric : the evaluation metric for the models
+- n_cross_validations : n-fold cross validations needed to perform in each model
+- experiment_timeout_minutes : the time in minutes after which autoML will stop.
+- featurization: auto defines whether featurization step should be done automatically 
 
      
 
 
 ### Results
-*TODO*: What are the results you got with your automated ML model? What were the parameters of the model? How could you have improved it?
+Run details and result attached here
+
+ ![BestMetric](/Best%20Metric.png "Best Result")
+ ![BestMetric](/BestModel.png "Best Result")
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
