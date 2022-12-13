@@ -88,6 +88,8 @@ automl_config = AutoMLConfig(compute_target=compute_target,
 ### Results
 Run details and result attached here
 
+accuracy : 0.849425287356322
+
  ![BestMetric](/Best%20Metric.png "Best Result")
  ![BestMetric](/BestModel.png "Best Result")
 
