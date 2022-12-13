@@ -133,13 +133,19 @@ slack_factor: The amount of slack allowed with respect to the best performing tr
 Generated the best model and accuracy
 
  ![HyperDriveResult](/HyperDriveBestModel.png "HyperDriveResult")
- ![HyperDriveResult](/HyperDriveFromUI.png "HyperDriveResult")
 
+
+increase the max_iter can be improve the performance of the model.
 
 *TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+ 
+ ![HyperDriveResult](/HyperDriveFromUI.png "HyperDriveResult")
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+ ![Endpoint](/Endpoint.png "Endpoint")
+ ![Deployment](/Deployment%20details.png "Deployment details")
+ ![Deployment](/Endpoint%20testing%20result.png "Deployment details")
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
