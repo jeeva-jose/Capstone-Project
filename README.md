@@ -45,6 +45,8 @@ The data downloaded from Kaggle website and place the csv file in my GitHub publ
 
 [GitHub](https://raw.githubusercontent.com/jeeva-jose/Capstone-Project/main/heart_failure_clinical_records_dataset.csv)
 
+Registerd Dataset
+ ![Dataset](/Dataset.png "Register Dataset")
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
