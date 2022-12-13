@@ -38,10 +38,10 @@ The dataset provided in csv file contain 13 features:
 | DEATH_EVENT | Whether the patient died during the follow-up period | Boolean (0=No, 1=Yes) |
 
 ### Task
-*TODO*: Explain the task you are going to be solving with this dataset and the features you will be using for it.
+My goal is classify patients based on above 12 features and predict the survival target column DEATH_EVENT. 
 
 ### Access
-*TODO*: Explain how you are accessing the data in your workspace.
+The data downloaded from Kaggle website and place the csv file in my public GitHub repository.
 
 ## Automated ML
 *TODO*: Give an overview of the `automl` settings and configuration you used for this experiment
