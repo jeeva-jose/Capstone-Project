@@ -6,7 +6,7 @@ As part of this project, I have to predict patients’ s survival based on their
 
 - AutoML experiement configured in Jupyter notekbook -> automl.ipynb
 - setup Hyperdrive settings and configuration -> hyperparameter_tuning.ipynb
-- Created traiing folder and place the train.py file
+- Created training folder and place the train.py file
 - Clean data and passing parameters -> train.py
 - Added conda package dependencies file conda_dependencies.yml
 
