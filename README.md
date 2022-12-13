@@ -148,10 +148,7 @@ increase the max_iter can be improve the performance of the model.
  ![Deployment](/Endpoint%20testing%20result.png "Deployment details")
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+https://clipchamp.com/watch/Fq733LWFlJR
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
