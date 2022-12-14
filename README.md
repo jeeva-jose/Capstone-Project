@@ -183,8 +183,8 @@ when I compare two models the AutoML is the best model. By increasing iterations
 ## Future work
 **These are some improvement areas to improve the accuracy of the model:**
 
-1.	Balance the data across the feature 
-2.	Increase the iteration
+1.	Balance the data across the features
+2.	Increase the iterations
 3.	Try with a different algorithm
 
 Individual predications are based on aggregated features and balanced data.
