@@ -173,7 +173,7 @@ https://clipchamp.com/watch/Fq733LWFlJR
 | :---: | :---: |
 | Accuracy | 0.849425287356322 |
 | AUC_weighted | 0.92106 |
-| Algortithm | VotingEnsemble |
+| Algorithm | VotingEnsemble |
 
 
 when I compare two models the AutoML is the best model. By increasing iterations and parameter tunning, Hyperdrive performance will improve.
