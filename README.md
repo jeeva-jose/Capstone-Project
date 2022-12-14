@@ -159,3 +159,33 @@ https://clipchamp.com/watch/Fq733LWFlJR
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
 
+
+## Pipeline comparison
+**Comparison of the two models and their performance.**
+
+
+| HyperDrive Model |  |
+| :---: | :---: |
+| Accuracy | 0.8 |
+
+
+| AutoML Model| |
+| :---: | :---: |
+| Accuracy | 0.849425287356322 |
+| AUC_weighted | 0.92106 |
+| Algortithm | VotingEnsemble |
+
+
+when I compare two models the AutoML is the best model. By increasing iterations and parameter tunning, Hyperdrive performance will improve.
+
+***
+
+## Future work
+**These are some improvement areas to improve the accuracy of the model:**
+
+1.	Balance the data across the feature 
+2.	Increase the iteration
+3.	Try with a different algorithm
+
+Individual predications are based on aggregated features and balanced data.
+
