@@ -160,7 +160,7 @@ https://clipchamp.com/watch/Fq733LWFlJR
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
 
 
-## Pipeline comparison
+## Model comparison
 **Comparison of the two models and their performance.**
 
 
